@@ -35,10 +35,8 @@ export const Modal = props => {
     //
      const click = ({ target }) => {
             const action = target.getAttribute('data-action') || target.parentElement.getAttribute('data-action');
-            if (action) {
-                console.log('this.$emit(\'change\', action)', action)
-                // this.$emit('change', action);
-            }
+            // if (action) {
+            // }
      }
 
   useCountRenders('Modal')

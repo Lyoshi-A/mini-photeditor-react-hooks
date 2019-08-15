@@ -8,7 +8,6 @@ import {useCountRenders} from '../hooks/use.count.render'
 
 const Desk = React.memo(() => {
    const { image } = useContext(DeskContext);
-   console.log('Desk image', image)
      // const dt = {
      //     showModal: false,
      //     text: '',

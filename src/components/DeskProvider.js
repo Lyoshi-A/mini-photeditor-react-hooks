@@ -38,12 +38,9 @@ const DeskProvider = props => {
                     }
             });
    const updateData = useCallback ((data) => {
-       // console.log('before:',image)
-       // Object.assign(image, data);
-       // console.log('after:',image)
        setImage(current => ({...current, ...data}))
    }, [setImage] );
-  // const [functionType, setFunctionType] = useState('');
+
   useEffect(()=>{
     window.addEventListener('keydown', handlers.keydown);
     return () => {
@@ -54,10 +51,7 @@ const DeskProvider = props => {
 
   const handlers = {
     NavClick: ({ target }) => {
-      console.log('handlers onClick')
              const action = target.getAttribute('data-action') || target.parentElement.getAttribute('data-action');
-             console.log('action ', action);
-
              switch (action) {
                  case 'move':
                  case 'crop':
@@ -97,13 +91,11 @@ const DeskProvider = props => {
          },
 
      onChange: () =>  {
-             console.log('handlers onChange')
              // const { modal } = this.$refs;
              // modal.hide();
          },
 
       keydown: (e, data) => {
-             console.log('handlers keydown', e.key, data)
              switch (e.key) {
                  // Undo crop
                  case 'z':
@@ -228,7 +220,6 @@ const DeskProvider = props => {
          },
 
          onDblClick: (e) => {
-           console.log('handlers onDblClick')
              // if (e.target.className.indexOf('cropper-face') >= 0) {
              //     e.preventDefault();
              //     e.stopPropagation();
@@ -237,13 +228,11 @@ const DeskProvider = props => {
          },
 
          start: () => {
-            console.log('handlers start')
              const {data} = image;
 
              if (image.cropped) {
                  return;
              }
-             console.log('start imageRef.current', imageRef.current.image, imageRef.current)
              cropper.current = new Cropper(imageRef.current, {
                  autoCrop: false,
                  dragMode: 'crop',
@@ -275,7 +264,6 @@ const DeskProvider = props => {
          },
 
          stop: () => {
-           console.log('handlers stop')
              if (cropper.current) {
                  cropper.current.destroy();
                  cropper.current = null;
@@ -283,7 +271,6 @@ const DeskProvider = props => {
          },
 
          crop: () =>  {
-           console.log('handlers crop', image.cropping)
              if (image.cropping) {
                updateData({
                      cropped: true,
@@ -303,8 +290,6 @@ const DeskProvider = props => {
          },
 
          clear: () => {
-           console.log('handlers clear')
-           console.log('clear data', image)
              if (image.cropping) {
                  cropper.current.clear();
                  updateData({
@@ -314,7 +299,6 @@ const DeskProvider = props => {
          },
 
          restore: () =>  {
-            console.log('handlers restore')
              if (image.cropped) {
                updateData({
                      cropped: false,
@@ -325,7 +309,6 @@ const DeskProvider = props => {
          },
 
          reset: () =>  {
-           console.log('handlers reset')
              handlers.stop();
              updateData({
                  cropped: false,
@@ -339,9 +322,7 @@ const DeskProvider = props => {
          },
 
          recognize: () => {
-             console.log('handlers recognize:')
              // const { modal } = this.$refs;
-             // console.log('recognize......');
              //
              // modal.show();
 
@@ -359,21 +340,17 @@ const DeskProvider = props => {
          },
 
          update: (data) => {
-           console.log('handlers update')
            updateData(data)
              // Object.assign(this.data, data);
          },
           upload: (data) => {
-            console.log('handlers upload')
             fileRef.current.click();
             // Object.assign(this.data, data);
           },
           download: (data) => {
-            console.log('handlers download')
             // Object.assign(this.data, data);
           },
           move: (data) => {
-            console.log('handlers move',data)
             // Object.assign(this.data, data);
           },
   }

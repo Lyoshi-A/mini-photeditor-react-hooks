@@ -4,7 +4,6 @@ import './Navbar.css'
 import {useCountRenders} from '../hooks/use.count.render'
 
 export const Navbar = React.memo(({data}) => {
-    console.log('Navbar', data)
     const downloadable = true;
     // data() {
     //     return {
