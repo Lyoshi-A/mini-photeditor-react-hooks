@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3aa564b3-b025-41ca-b6a8-f18cc3be781e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Desk.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Desk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DeskProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DeskProvider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/use.count.render.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/use.count.render.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565695051340</updated>
-      <workItem from="1565695052714" duration="48998000" />
+      <workItem from="1565695052714" duration="50193000" />
     </task>
     <servers />
   </component>
