@@ -2,6 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Implementation mini Photo Editor using react hooks and cropper
 
+## Demo http://45.55.61.142:8085/
+
 ## Available Scripts
 
 In the project directory, you can run:

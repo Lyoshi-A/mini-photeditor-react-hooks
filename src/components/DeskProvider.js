@@ -47,7 +47,7 @@ const DeskProvider = props => {
       window.removeEventListener('keydown', handlers.keydown);
       handlers.stop();
     }
-  }, [])
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handlers = {
     NavClick: ({ target }) => {
